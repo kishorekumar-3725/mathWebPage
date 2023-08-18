@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: black;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .login-container {
+      background-color: rgba(243, 201, 34, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+      max-width: 300px;
+      text-align: center;
+      animation: fadeIn 0.5s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .login-container h2 {
+      margin-top: 0;
+    }
+
+    .input-field {
+      width: 95%;
+      padding: 10px;
+      margin: 13px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .submit-button {
+      color: rgb(10, 1, 1);
+      border: none;
+      border-radius: 3px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .submit-button:hover {
+      background-color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <video id="video-background" autoplay muted loop>
+    <source src="vid.mp4" type="video/mp4">
+  </video>
+  <br><br><br><br><br><br>
+  <header>
+  <center>
+    <h1 style="color: aliceblue;">A Math & Skill Enhance 
+      Web page</h1>
+  </center>
+</header>
+<br><br><br><br><br>
+
+  <center>
+    <div class="login-container">
+      <h2>Login</h2>
+      <input type="text" id="username" class="input-field" placeholder="Enter Name">
+      <button class="submit-button" onclick="login()">Submit</button>
+    </div>
+  </center>
+
+  <script src="index.js"></script>
+</body>
+</html>

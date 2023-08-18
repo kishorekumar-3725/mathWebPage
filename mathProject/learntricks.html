@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Learning</title>
+  <style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color:#2ecc71;
+  color: oldlace;
+  text-align: center;
+  padding: 10px 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #000000;
+}
+
+.videos-container, .blogs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.article {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Math Learning</h1>
+  </header>
+  <main>
+    <section class="videos-section">
+      <h2>Math Videos</h2>
+      <div class="videos-container">
+        <iframe width="560" height="315" src="vid1.mp4" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="vid2.mp4" frameborder="0" allowfullscreen></iframe>
+        <!-- Add more video iframes here -->
+      </div>
+    </section>
+    <section class="blogs-section">
+      <h2>Math Blogs</h2>
+      <div class="blogs-container">
+        <article>
+          <h3>Introduction to Addition</h3>
+          <p>Learn about the basics of addition and how to add numbers together.</p>
+          <a href="https://www.splashlearn.com/blog/math-tricks-for-kids/">Read More</a>
+        </article>
+        <article>
+          <h3>Mastering Subtraction</h3>
+          <p>Explore the concept of subtraction and practice subtracting numbers.</p>
+          <a href="https://brighterly.com/blog/math-tricks-for-kids/">Read More</a>
+        </article>
+        <!-- Add more blog articles here -->
+      </div>
+    </section>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
