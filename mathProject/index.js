@@ -2,7 +2,7 @@ function login() {
     const username = document.getElementById("username").value;
     if (username.trim() !== "") {
       // Redirect to the next page after successful login
-      window.location.href = "index.html";
+      window.location.href = "main.html";
     } else {
       alert("Please enter a valid username.");
     }
